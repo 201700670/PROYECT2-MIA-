@@ -1,0 +1,51 @@
+header{
+    background-color: rgb(8, 4, 4);
+}
+ngb-carousel{
+    background-color: rgb(8, 4, 4);
+}
+
+ ngb-carousel .picsum-img-wrapper {
+    background-color: rgb(8, 4, 4);
+    position: relative;
+    margin-left: 15%;
+    margin-top: 1%;
+    padding-top: 40%; /* Keep ratio for 900x500 images */
+    margin-block-end: 2%;
+  }
+  
+     ngb-carousel .picsum-img-wrapper>img {
+    background-color: rgb(8, 4, 4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  carousel-control-next{
+    background-color: rgb(8, 4, 4);
+  }
+
+  carousel-control-prev{
+    background-color: rgb(8, 4, 4);
+  }
+  header nav {
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 40%, #FC4F4F 50%, #b3ff00 100%);
+    width: 100%;
+    margin: 1;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  #h3color { 
+      color: black; 
+    }
+
+    #h3color2 { 
+        color: rgb(255, 239, 11); 
+      }
+      .btn btn-outline-success my-2 my-sm-0{
+          color: white;
+      }
