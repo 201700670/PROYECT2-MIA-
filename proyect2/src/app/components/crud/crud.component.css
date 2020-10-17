@@ -1,13 +1,9 @@
 header {
-    width: auto;
-    height: 100%;
-    font-size: 13px;
-    z-index: 1000;
-    background-color: gray;
+    background-color: rgb(241, 172, 172);
   }
   
     header nav {
-      background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+      background-image: linear-gradient(90deg, #8adbf7 0%, #c1ffae 10%, #fff0ae 49%, #fcafaf 70%, #dfa0fc 100%);
       width: 100%;
       margin: 0;
       position: fixed;
@@ -18,3 +14,65 @@ header {
     header nav:navbar-expand-lg navbar-light bg-light {
       animation:slidebg 2s linear infinite;
     }
+
+    .header{
+      text-align: center;
+    }
+    .content{
+      margin: 100 px;
+    }
+    #btnUpload{
+      cursor: pointer;
+    }
+
+ body mat-card{
+      text-align: center;
+      margin-left: 30%;
+      margin-right: 30%;
+      -webkit-box-shadow: 2px 3px 5px 0px rgba(27, 19, 19, 0.75);
+      -moz-box-shadow: 2px 3px 5px 0px rgba(29, 26, 26, 0.781);
+      box-shadow: 2px 3px 5px 0px rgba(14, 13, 13, 0.75);
+  }
+    #card{
+      text-align: center;
+      font-family: 'Times New Roman';
+      color: #e78dfd;
+      border-radius: 15px;
+      border: 3px double #e78dfd;
+  }
+  #card1{
+      text-align: center;
+      background-color: rgb(41, 38, 38);
+      -webkit-box-shadow: 2px 3px 5px 0px rgba(44, 40, 40, 0.75);
+      -moz-box-shadow: 2px 3px 5px 0px rgba(39, 36, 36, 0.75);
+      box-shadow: 2px 3px 5px 0px rgba(17, 17, 17, 0.75);
+  }
+  body{
+    background-image:url("https://i.pinimg.com/736x/cc/0d/5c/cc0d5c3a25a5333ef3ff77e66d85cf02.jpg");
+    margin-top: 0%;
+}
+#boton_1{
+  text-decoration: none;
+  padding: 3px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 16px;
+  color: #08dddd;
+  border-radius: 15px;
+  border: 3px double #08dddd;
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(193, 240, 241, 0.75);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(112, 253, 253, 0.75);
+  box-shadow: 2px 3px 5px 0px rgba(240, 255, 254, 0.75);
+}
+#boton_1:hover{
+  opacity: 0.6;
+  text-decoration: none;
+}
+#espacio{
+  margin-right: 10%;
+}
+mat-form-field {
+  margin-right: 12px;
+}

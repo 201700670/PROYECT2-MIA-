@@ -1,0 +1,80 @@
+header{
+    background-color: #0c0c0c;
+}
+
+header nav {
+    background-image: linear-gradient(90deg, #5a5959 0%, #757373 40%, #858485 50%, #161516 100%);
+    width: 100%;
+    margin: 1;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  header navbar-brand{
+      color: aliceblue;
+  }
+
+ #homes{
+      color: aliceblue;
+  }
+body{
+    background-image:url("https://i.pinimg.com/originals/5d/78/b7/5d78b7696d48ffd4965da09e7733f540.jpg");
+    margin-top: -4.1%;
+}
+body mat-card{
+    text-align: center;
+    margin-left: 33%;
+    margin-right: 33%;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(27, 19, 19, 0.75);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(29, 26, 26, 0.781);
+    box-shadow: 2px 3px 5px 0px rgba(14, 13, 13, 0.75);
+}
+
+#card{
+    text-align: center;
+    font-family: 'Times New Roman';
+    color: #e78dfd;
+    border-radius: 15px;
+    border: 3px double #e78dfd;
+}
+#card1{
+    text-align: center;
+    background-color: rgb(41, 38, 38);
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(44, 40, 40, 0.75);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(39, 36, 36, 0.75);
+    box-shadow: 2px 3px 5px 0px rgba(17, 17, 17, 0.75);
+}
+
+
+#boxis{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#boxis example-full-width{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#boton_1{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 16px;
+    color: #08dddd;
+    border-radius: 15px;
+    border: 3px double #08dddd;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(193, 240, 241, 0.75);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(112, 253, 253, 0.75);
+    box-shadow: 2px 3px 5px 0px rgba(240, 255, 254, 0.75);
+  }
+  #boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+  #liking{
+      color: rgb(95, 95, 253);
+  }

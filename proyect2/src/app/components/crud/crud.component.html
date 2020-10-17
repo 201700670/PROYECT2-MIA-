@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <header>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,5 +23,113 @@
     </form>
   </div>
 </nav>
+    
 </header>
-</html>
+<body>
+<br>
+<br>
+<br>
+    <mat-card >
+        <h1 id="card"><mat-icon aria-hidden="false" aria-label="Example home icon">account_circle</mat-icon> Sign in</h1>
+    </mat-card>
+    <mat-card id="card1">
+        <input type="file" class="d-none" (change)="onPhotoSelected($event, $event)" #photoInput>
+                <img [src]="photoSelected || 'assets/no-image.png'" class="img-fluid" alt="No image">
+        <br>
+          <a (click)="photoInput.click()" color="info" id="boton_1" type="submit">Elegir imagen y visualizar</a>
+        <br><br>
+       <mat-form-field id="espacio" class="example-full-width" appearance="fill">
+        <mat-label id="espacio">Nombre</mat-label>
+        <input id="espacio"  matInput [(ngModel)]="nombre" name="nombre" placeholder="Ingrese su nombre">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Apellido</mat-label>
+        <input   matInput [(ngModel)]="apellido" name="apellido" placeholder="Ingrese su apellido">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>País</mat-label>
+            <mat-select [(ngModel)]="selectedviewValue" name="food">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+        <mat-label>Fecha de nacimiento</mat-label>
+        <input matInput  [(ngModel)]="fecha" name="fecha" [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker [calendarHeaderComponent]="exampleHeader"></mat-datepicker>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label><mat-icon aria-hidden="false" aria-label="Example home icon">alternate_email</mat-icon> Correo electrónico</mat-label>
+        <input   matInput [(ngModel)]="correo" name="correo" placeholder="ejemplo@email.com">
+        </mat-form-field>
+        <mat-form-field  class="example-full-width" appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input matInput [(ngModel)]="contra" name="contra" [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        </mat-form-field>
+        <br>
+        <mat-form-field  class="example-full-width" appearance="fill">
+        <mat-label>Confirmar contraseña</mat-label>
+        <input matInput [(ngModel)]="password" name="password" [type]="hide1 ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide1 = !hide1" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide1 ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        </mat-form-field>
+        <br>
+        <a (click)="ViewUser()" color="info" id="boton_1" type="submit">LOGIN</a>
+        <br>
+  </mat-card>
+
+
+  <div class="container">
+    <div class="content">
+      <div class="header">
+        <h1>File upload</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              
+            </div>
+            <div class="custom-file">
+              <form (ngSubmit)="onUpload($event)" >
+              <button  class="input-group-text upload" type="submit">
+                Subir
+              </button>
+               <input type="file" class="d-none" (change)="onPhotoSelected($event, $event)" #photoInput>
+                <img [src]="photoSelected || 'assets/no-image.png'" class="img-fluid" alt="No image">
+     
+               <a (click)="photoInput.click()" color="info" id="boton_1" >Elegir imagen y visualizar</a>
+       
+              </form>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!--
+<br>
+<br>
+<image-upload (uploadFinished)="onUploadFinish($event)">
+</image-upload>
+
+<br />
+<br />
+
+<button (click)="sendImage()" class="btn btn-primary btn-lg">Enviar</button>-->
+  </body>
